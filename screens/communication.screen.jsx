@@ -252,13 +252,13 @@ const CommunicationScreen = ({route}) => {
               bioImpedance,
               phaseAngle,
             );
-            // setOnData(prevState => {
-            //   return [
-            //     ...prevState,
-            //     {type: 'Bio Impedance', data: bioImpedance},
-            //     {type: 'Phase Angle', data: phaseAngle},
-            //   ];
-            // });
+            setOnData(prevState => {
+              return [
+                ...prevState,
+                {type: 'Bio Impedance', data: bioImpedance},
+                {type: 'Phase Angle', data: phaseAngle},
+              ];
+            });
           }
         });
 
